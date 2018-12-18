@@ -1,9 +1,7 @@
 <template>
   <div class="child">
     <slot name="up"></slot>
-
     <h3>这里是子组件</h3>
-
     <slot name="down"></slot>
     <slot></slot>
   </div>
@@ -11,19 +9,20 @@
 
 <script>
   export default {
+
     data: function(){
       return {
         msg: ''
       }
     },
+
     computed: {
-
     },
+
     methods:{
-
     },
-    components: {
 
+    components: {
     }
   }
 </script>

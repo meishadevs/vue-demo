@@ -19,7 +19,7 @@
 </template>
 
 <script>
-  import Child from './Child.vue'
+  import child from './child.vue'
 
   export default {
 
@@ -27,7 +27,7 @@
     components: {
 
       //引入child组件
-      'child': Child
+      child
     }
   }
 </script>

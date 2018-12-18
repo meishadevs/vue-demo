@@ -1,7 +1,36 @@
 <template>
-  <div class="hello">
+  <div class="index">
     <h1>{{ title }}</h1>
     <div class="demo-list">
+      <div class="demo-item">
+        <h2>自定义指令</h2>
+        <ul>
+          <li>
+            <router-link to="/directive1">局部自定义指令</router-link>
+          </li>
+          <li>
+            <router-link to="/directive2">全局自定义指令</router-link>
+          </li>
+          <li>
+            <router-link to="/directive3">查看自定义指令的参数</router-link>
+          </li>
+          <li>
+            <router-link to="/directive4">传递多个参数给自定义指令</router-link>
+          </li>
+          <li>
+            <router-link to="/vImage">使用自定义指令实现一个简单的图片懒加载效果</router-link>
+          </li>
+          <li>
+            <router-link to="/vResize">使用自定义指令监听窗口大小的变化</router-link>
+          </li>
+          <li>
+            <router-link to="/drag1">拖拽效果</router-link>
+          </li>
+          <li>
+            <router-link to="/drag2">使用自定义指令实现的拖拽效果</router-link>
+          </li>
+        </ul>
+      </div>
       <div class="demo-item">
         <h2>插槽使用示例</h2>
         <ul>

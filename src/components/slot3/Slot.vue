@@ -34,9 +34,9 @@
 </template>
 
 <script>
-  import Child from './Child.vue'
-  export default {
+  import child from "./child.vue";
 
+  export default {
     methods: {
       clickHandler(data){
           console.log(data);
@@ -45,7 +45,7 @@
 
     //使用外部组件
     components:{
-      'child': Child
+      child
     }
   }
 </script>

@@ -36,12 +36,12 @@
 </template>
 
 <script>
-  import Child from './Child.vue'
+  import child from './child.vue'
   export default {
 
     //使用外部组件
     components:{
-      'child': Child
+      child
     }
   }
 </script>
