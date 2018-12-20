@@ -26,17 +26,17 @@
           el.innerHTML =
 
             //指令名，不包含v-前缀
-            "name："       + s(binding.name) + "<br>" +
+            "指令名称："       + s(binding.name) + "<br>" +
 
-            //指令的绑定值，例如：v-my-directive="1 + 1" 中，绑定值为2
-            "value："      + s(binding.value) + "<br>" +
+            //指令的绑定值，例如：v-demo="hello" 中，绑定值为hello
+            "指令的绑定值："      + s(binding.value) + "<br>" +
 
-            //字符串形式的指令表达式。例如 v-my-directive="1 + 1"
-            "expression：" + s(binding.expression) + "<br>" +
+            //字符串形式的指令表达式。例如 v-demo="1 + 1"
+            "字符串形式的指令表达式：" + s(binding.expression) + "<br>" +
             "argument："   + s(binding.arg) + "<br>" +
 
             //Vue编译生成的虚拟节点
-            "vnode keys：" + Object.keys(vnode).join(", ")
+            "Vue编译生成的虚拟节点：" + Object.keys(vnode).join(", ")
 
         }
       }

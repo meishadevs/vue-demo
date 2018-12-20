@@ -1,23 +1,15 @@
 <template>
   <div class="father">
-    <h3>这里是父组件</h3>
-    <!-- 使用child组件 s -->
+    <h3>我是父组件</h3>
+    <!-- 使用child组件  -->
     <child>
-      <!-- 添加到child组件中的html，html会渲染到child组件下的slot标签上 s -->
+      <!-- 添加到child组件中的html，html会渲染到child组件下的slot标签上 -->
       <div class="tmpl">
-        <span>菜单1</span>
-        <span>菜单2</span>
-        <span>菜单3</span>
-        <span>菜单4</span>
-        <span>菜单5</span>
-        <span>菜单6</span>
+        <span>我是添加到child组件中的文本</span>
       </div>
-      <!-- 添加到child组件中的html，html会渲染到child组件下的slot标签上 e -->
     </child>
-    <!-- 使用child组件 e -->
   </div>
 </template>
-
 <script>
   import child from './child.vue'
 

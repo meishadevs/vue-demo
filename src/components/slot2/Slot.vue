@@ -1,36 +1,25 @@
 <template>
   <div class="father">
-    <h3>这里是父组件</h3>
+    <h3>我是父组件</h3>
+
+    <!-- 使用child组件 -->
     <child>
-      <!-- 添加到child组件中的html，html会渲染到child组件下的name属性值为up的slot标签上 s -->
+
+      <!-- 添加到child组件中的html，html会渲染到child组件下的name属性值为up的slot标签上 -->
       <div class="tmpl" slot="up">
-        <span>菜单1</span>
-        <span>菜单2</span>
-        <span>菜单3</span>
-        <span>菜单4</span>
-        <span>菜单5</span>
-        <span>菜单6</span>
+        <span>我是添加到child组件中的文本----up</span>
       </div>
-      <!-- 添加到child组件中的html，html会渲染到child组件下的name属性值为up的slot标签上 e -->
-      <!-- 添加到child组件中的html，html会渲染到child组件下的name属性值为down的slot标签上 s -->
+
+      <!-- 添加到child组件中的html，html会渲染到child组件下的name属性值为down的slot标签上 -->
       <div class="tmpl" slot="down">
-        <span>菜单-1</span>
-        <span>菜单-2</span>
-        <span>菜单-3</span>
-        <span>菜单-4</span>
-        <span>菜单-5</span>
-        <span>菜单-6</span>
+        <span>我是添加到child组件中的文本----down</span>
       </div>
-      <!-- 添加到child组件中的html，html会渲染到child组件下的slot标签上 s -->
+
+      <!-- 添加到child组件中的html，html会渲染到child组件下的slot标签上 -->
       <div class="tmpl">
-        <span>菜单->1</span>
-        <span>菜单->2</span>
-        <span>菜单->3</span>
-        <span>菜单->4</span>
-        <span>菜单->5</span>
-        <span>菜单->6</span>
+        <span>我是添加到child组件中的文本</span>
       </div>
-	   <!-- 添加到child组件中的html，html会渲染到child组件下的slot标签上 e -->
+
     </child>
   </div>
 </template>
