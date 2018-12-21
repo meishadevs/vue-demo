@@ -45,6 +45,17 @@
           </li>
         </ul>
       </div>
+      <div class="demo-item">
+        <h2>渲染函数(render函数)</h2>
+        <ul>
+          <li>
+            <router-link to="/render1">描点标签组件</router-link>
+          </li>
+          <li>
+            <router-link to="/render2">使用渲染函数实现描点标签组件</router-link>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </template>

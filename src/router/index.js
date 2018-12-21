@@ -12,6 +12,8 @@ import vImage from "@/components/vImage/vImage";
 import vResize from "@/components/vResize/vResize";
 import drag1 from "@/components/drag1/drag";
 import drag2 from "@/components/drag2/drag";
+import render1 from "@/components/render1/render";
+import render2 from "@/components/render2/render";
 
 Vue.use(Router)
 
@@ -76,6 +78,16 @@ export default new Router({
       path: "/drag2",
       name: "drag2",
       component: drag2
+    },
+    {
+      path: "/render1",
+      name: "render1",
+      component: render1
+    },
+    {
+      path: "/render2",
+      name: "render2",
+      component: render2
     }
   ]
 })
