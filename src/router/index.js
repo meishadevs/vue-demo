@@ -14,6 +14,7 @@ import drag1 from "@/components/drag1/drag";
 import drag2 from "@/components/drag2/drag";
 import render1 from "@/components/render1/render";
 import render2 from "@/components/render2/render";
+import render3 from "@/components/render3/render";
 
 Vue.use(Router)
 
@@ -88,6 +89,11 @@ export default new Router({
       path: "/render2",
       name: "render2",
       component: render2
+    },
+    {
+      path: "/render3",
+      name: "render3",
+      component: render3
     }
   ]
 })
