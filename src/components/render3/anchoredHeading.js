@@ -1,10 +1,16 @@
-
 export default {
 
   //组件名称
   name: "anchoredHeading",
 
   render(createElement) {
+
+    var headingId = getChildrenTextContent(this.$slots.default)
+
+      //将大写转换成小写
+      .toLowerCase()
+      .replace(/\W+/g, "-")
+      .replace(/(^\-|\-$)/g, "");
 
     /**
      * 创建描点标题组件
@@ -14,13 +20,56 @@ export default {
      * 返回值：虚拟DOM(可以简写成VNode)
      */
     return createElement(
-
-      //标签名称
       "h" + this.level,
+      [
+        createElement("a",
+          {
 
-      //插入标签中的子元素
-      this.$slots.default
-    );
+            //设置属性
+            attrs: {
+              name: headingId,
+              href: "#" + headingId
+            },
+
+            //设置样式
+            style: {
+              color: "red",
+              fontSize: "20px"
+            },
+
+            //设置类
+            class: {
+              foo: true,
+              bar: false
+            },
+
+            //DOM属性
+            domProps: {
+              innerHTML: "baz"
+            },
+
+            //接收从父组件中传递过来的数据
+            props: {
+              myProp: "bar"
+            },
+
+            //设置组件上绑定的事件
+            on: {
+
+              //在组件上绑定一个鼠标点击事件
+              click: function (event) {
+
+                //阻止事件的默认行为
+                event.preventDefault();
+                console.log("你点击了链接");
+              }
+            }
+          },
+
+          this.$slots.default
+        )
+      ]
+    )
   },
 
   //接收从父组件中传递过来的数据
@@ -36,4 +85,12 @@ export default {
       required: true
     }
   }
+};
+
+//获得子节点中的文本内容
+var getChildrenTextContent = function (children) {
+
+  return children.map(function (node) {
+    return node.children ? getChildrenTextContent(node.children) : node.text
+  }).join("");
 };
