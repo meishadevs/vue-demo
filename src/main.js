@@ -2,6 +2,16 @@
 import Vue from "vue";
 import App from "./App";
 import router from "./router";
+import iView from 'iview';
+import iEditor from 'iview-editor';
+
+// 使用 css
+//import 'iview/dist/styles/iview.css';
+//import './assets/iview-editor.css';
+
+// 使用插件
+Vue.use(iView);
+Vue.use(iEditor);
 
 Vue.config.productionTip = false;
 

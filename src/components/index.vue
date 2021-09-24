@@ -57,6 +57,9 @@
           <li>
             <router-link to="/render3">在渲染函数中实现数据绑定</router-link>
           </li>
+          <li>
+            <router-link to="/edit">富文本编辑器</router-link>
+          </li>
         </ul>
       </div>
     </div>
